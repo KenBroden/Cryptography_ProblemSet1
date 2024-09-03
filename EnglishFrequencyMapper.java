@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class EnglishFrequencyMapper {
+
+    // Map the most frequent letters in the ciphertext to the most frequent letters in English
     public static Map<Character, Character> mapToEnglishFrequencies(Map<Character, Double> frequencyMap) {
         Map<Character, Double> englishFrequencies = new LinkedHashMap<>();
         englishFrequencies.put('a', 0.0817);

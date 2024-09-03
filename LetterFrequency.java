@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class LetterFrequency {
+
+    // Calculate the frequency of each letter in the input text
     public static Map<Character, Double> calculateFrequency(String input) {
         Map<Character, Integer> frequencyMap = new HashMap<>();
         int totalLetters = 0;
