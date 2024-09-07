@@ -43,9 +43,23 @@ that the following is the proper application and
 interpretation i offer my theories in the hope that the
 essence of okinawan karate will remain intact
 
+## 1.1 Decryption Strategy
+
+I mapped out the letter frequencies in the English language and analyzed the letter frequencies in the ciphertext. Based on these frequencies, I swapped the characters in the ciphertext accordingly. Finally, I allowed for manual adjustments to the swapped text, enabling corrections when words were recognizable but had one or two misplaced letters.
+
 Shift 11:
 ifweallunitewewillcausetheriverstostainthegreatwate
 rswiththeirblood
 
 "if we all unite we will cause the rivers to stain the great waters
 with their blood" - Tecumseh
+
+## 1.2 Decryption Strategy
+
+Given that the problem stated the ciphertext was encrypted with a shift, I assumed it was a Caesar Shift. I wrote a program that accepted a shift number and the ciphertext, then returned the decrypted text. Since the encoded string was relatively short, I implemented a loop to try all 25 possible shifts. Afterward, I analyzed the outputs for recognizable English words. It became evident that the Caesar Shift used a shift of 11, as the name "Tecumseh" became immediately clear.
+
+## 1.11 Affine Cipher Decryption
+
+Decryption result: firstthesentenceandthentheevidencesaidthequeen
+
+With some spaces: "First the sentence and then the evidence said the queen"

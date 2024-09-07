@@ -6,7 +6,7 @@ public class Main {
         String input = "xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpit\r\n" + //
                 "ghlxiwiwtxgqadds";
 
-        // Apply Caesar Cipher with different shifts
+        // Apply Caesar Cipher with different shifts.  **1.2 Decryption Strategy**
         System.out.println("Trying different Caesar cipher shifts:");
         for (int shift = 1; shift <= 26; shift++) {
             String shiftedText = CaesarCipher.applyShift(input, shift);
@@ -69,5 +69,6 @@ public class Main {
         }
 
         scanner.close();
+
     }
 }
